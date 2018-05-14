@@ -295,10 +295,6 @@ class Context(object):
         """
         self.__locked = False
 
-        # Check for unhandled context options
-        if len(kwargs) > 0:
-            print('Warning: Unhandled config context options: {}'.format(kwargs), file=sys.stderr)
-
         # Validation is done on assignment
         self.workspace = workspace
 
