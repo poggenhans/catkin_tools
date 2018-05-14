@@ -108,7 +108,7 @@ prefix = userbase or opts.prefix or sys.prefix
 
 setup(
     name='catkin_tools',
-    version='0.4.4',
+    version='0.4.5-dev',
     packages=find_packages(exclude=['tests*', 'docs']),
     package_data={
         'catkin_tools': [
@@ -118,7 +118,6 @@ setup(
             'docs/examples',
         ] + osx_notification_resources
     },
-    data_files=get_data_files(prefix),
     install_requires=install_requires,
     author='William Woodall',
     author_email='william@osrfoundation.org',
